@@ -3,10 +3,12 @@ import SiVerdadero from '../shared/si-verdadero/SiVerdadero';
 import './Layout.css';
 
 function Layout() {
+    /* Cambia este valor / Change this value */
+    const isTrue = true;
+
     return (
         <div className="layout">
-            <SiVerdadero />
-            <SiFalso/>
+            {isTrue ? <SiVerdadero/> : <SiFalso/> }
         </div>
     );
 }
