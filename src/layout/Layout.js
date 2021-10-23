@@ -1,8 +1,13 @@
+import SiFalso from '../shared/si-falso/SiFalso';
+import SiVerdadero from '../shared/si-verdadero/SiVerdadero';
 import './Layout.css';
 
 function Layout() {
     return (
-        <p>Hola, mundo!</p>
+        <div className="layout">
+            <SiVerdadero />
+            <SiFalso/>
+        </div>
     );
 }
 
